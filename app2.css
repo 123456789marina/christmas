@@ -34,3 +34,7 @@ button:hover{
 	color: red;
 	background-color: whitesmoke;
 }
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
