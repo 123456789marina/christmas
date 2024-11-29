@@ -1,8 +1,15 @@
 body{
-	 background-color:white;
+	 
 	background-image: url("https://th.bing.com/th/id/R.fe8e1637d2425b2419a7ed8a1742f141?rik=cxiRcXMfjTQEag&pid=ImgRaw&r=0");
-	 font-size: 16px;
-
+	 
+font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
 }
 
 h2{
