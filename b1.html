@@ -6,6 +6,50 @@
     
     <title>present1</title>
 </head>
+<body><style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Container to center the image */
+    .image-container {
+      width: 100%;
+      height: auto;
+      text-align: center; /* Centers the image horizontally */
+      padding: 10px; /* Add some padding for spacing */
+    }
+
+    /* Ensure the image is responsive */
+    .responsive-image {
+      max-width: 100%;   /* Ensures the image does not overflow the container */
+      height: auto;      /* Maintains the aspect ratio */
+      display: block;    /* Prevents inline image spacing */
+      margin: 0 auto;    /* Centers the image horizontally */
+    }
+
+    /* Media Queries for Mobile Adjustments */
+    @media (max-width: 768px) {
+      .responsive-image {
+        width: 90%; /* Adjust the image width on smaller screens */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .responsive-image {
+        width: 100%; /* On very small screens, make the image full width */
+      }
+    }
+  </style>
+</head>
 <body>
-    <img src="https://st-takla.org/Gallery/var/albums/Bible/verses/29/45/www-st-takla-org--text-verse-29-45-03.jpg">
+
+  <div class="image-container">
+    <!-- Image that will adjust to screen size -->
+    <img src="https://st-takla.org/Gallery/var/albums/Bible/verses/29/45/www-st-takla-org--text-verse-29-45-03.jpg " alt="Responsive Image" class="responsive-image">
+  </div>
+
+    
+   
 </body>
