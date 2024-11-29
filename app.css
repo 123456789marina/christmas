@@ -50,3 +50,7 @@ button:hover{
 	background-color:skyblue;
 	color: blue;
 }
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
