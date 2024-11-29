@@ -63,7 +63,12 @@ button:hover{
 	background-color:skyblue;
 	color: blue;
 }
- 
+ @media (max-width: 600px) {
+      .login-form {
+        padding: 15px;
+        width: 100%;
+      }
+    }
   }
 	.container{
 		margin-top:100px;
