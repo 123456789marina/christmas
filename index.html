@@ -9,10 +9,10 @@
 <body>
     <h1>Merry Christmas</h1>
     <div class="login-form">
-    <form action="nextpage.html">
+    <form  id="nameForm">
         <h2>login</h2>
         <label>username: </label>
-        <input type="text" placeholder="Enter your name.. ">
+        <input id="name" type="text" placeholder="Enter your name.. ">
         <br><br>
          <label>password: </label>
          <input type="password" placeholder="Enter your password..">
@@ -24,9 +24,15 @@
     </form>
 </div>
 
-<script>
-    function start(){
-        window.location.href="nextpage.html";
-    }
-</script>
+ <script>
+    // When the form is submitted
+    document.getElementById('nameForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+      const userName = document.getElementById('name').value; // Get the name
+      // Store the name in localStorage
+      localStorage.setItem('userName', userName);
+      // Redirect to the second page
+      window.location.href = 'nextpage.html';
+    });
+  </script>
 </body>
