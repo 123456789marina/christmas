@@ -7,7 +7,7 @@
     <title>christmas store</title>
 </head>
 <body>
-     <h1>Christmas Store</h1>
+      <h1 id="greeting"> Merry Christmas, user </h1>
      <img src=" https://th.bing.com/th/id/R.7e88047b34b701570046c26ebe35234c?rik=FWHz6M0l5GPRSg&pid=ImgRaw&r=0">
      <button onclick="store()">Go to store</button>
      <script>
@@ -16,4 +16,15 @@
             window.location.href="store.html";
          }
      </script>
+     <script>
+    // Get the name from localStorage
+    const userName = localStorage.getItem('userName');
+    
+    // If the name exists, update the greeting
+    if (userName) {
+      document.getElementById('greeting').textContent = `Merry Christmas, ${userName}!`;
+    } else {
+      document.getElementById('greeting').textContent = 'Merry Christmas, Guest!';
+    }
+  </script>
 </body>
