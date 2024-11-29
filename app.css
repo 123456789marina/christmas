@@ -13,8 +13,8 @@ font-family: Arial, sans-serif;
 }
 
 h2{
-	font-size: 30px;
-	color: blueviolet;
+	 text-align: center;
+      margin-bottom: 20px;
 }
 h1{
 	font-size: 30px;
@@ -22,8 +22,10 @@ h1{
 	text-align: center;
 }
 label{
-	font-size: 30px;
-	color: black;
+	 
+	 display: block;
+      margin: 8px 0;
+      font-weight: bold;
 }
 form{
 	disply: flex;
@@ -32,11 +34,12 @@ form{
 
 }
 input{
-	width: 30px;
-	height: 10px;
-	border-radius: 10px;
-	border: none;
-	text-align: center;
+	 width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box; 
 }
 .login-form{
 	 width: 100%;
@@ -50,12 +53,11 @@ input{
 	  
 }
 button{
-	color: whitesmoke;
-	background-color: blue;
-	border-radius: 7px;
-	border: none;
-	padding: 12px 20px;
-	cursor: pointer;
+	  background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
 }
 button:hover{
 	background-color:skyblue;
