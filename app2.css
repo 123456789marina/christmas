@@ -2,6 +2,7 @@ body{
 	background-image: url("https://th.bing.com/th/id/OIP.j8745L1pTQDTvJRO6QHNYQHaFG?rs=1&pid=ImgDetMain");
 background-repeat: no-repeat;
 background-size: cover;
+	 font-size: 16px;
 }
 h1{
 	font-size: 50px;
